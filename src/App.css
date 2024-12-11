@@ -2,21 +2,24 @@
 
 * {
 	background-color: #EDECE6;
+	color: #024230;
+	font-family: "Wix Madefor Display", sans-serif;
 }
 
 :root {
-	--cards: 4;
-	--cardHeight: 87vh;
-	--cardTopPadding: 1.5em;
+	--cards: 5;
+	--cardHeight: 80vh;
+	--cardTopPadding: 5em;
 	--cardMargin: 4vw;
 }
 
 .container {
-	width: 90%;
+	/* width: 90%; */
 	margin: 0 auto;
 }
 
 #cards {
+	/* width: 90%; */
 	list-style: none;
 	padding-left: 0;
 	display: grid;
@@ -25,6 +28,7 @@
 	gap: var(--cardMargin);
 	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
 	margin-bottom: var(--cardMargin);
+	margin-top: 50px;
 }
 
 #card1 {
@@ -36,15 +40,36 @@
 #card3 {
 	--index: 3;
 }
-#card4 {
-	--index: 4;
+
+#our-vision {
+	position:relative;
+	top: 0;
+	/* background-color: transparent; */
+	/* padding-bottom: 200px; */
+	/* margin-bottom: 100px; */
+}
+
+/* #024230 */
+
+.static-card {
+	position: sticky;
+	top: 0;
+	/* background-color: transparent */
 }
 
 .card {
+	/* width: 90%; */
 	position: sticky;
 	top: 0;
-	/* padding-top: calc(var(--index) * var(--cardTopPadding)); */
-	background-color: transparent;	
+	padding-top: calc(1 * var(--cardTopPadding));
+	background-color: transparent;
+	/* padding-left: 100px; */
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.img-body {
+	width: 100%;
 }
 
 #card1 .card-body {
@@ -78,14 +103,12 @@ h2 {
 }
 
 .heading {
-	font-family: "Wix Madefor Display", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 100px;
 	padding-left: 80px;
 	padding-right: 80px;
-	color: #024230;
 }
 
 .farmer-text {
@@ -112,4 +135,45 @@ h2 {
 	margin-left: 80px;
 	margin-right: 20px;
 	/* padding-right: 80px; */
+}
+
+.our-vision-body {
+	/* background-color: rgb(216, 131, 131); */
+	/* height: var(--cardHeight); */
+	/* height: auto; */
+	font-size: 46px;
+	padding-right: 300px;
+	padding-top: 50px;
+	padding-left: 80px;
+}
+
+.bullet-heading {
+	font-weight: 500;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-bottom: 80px;
+}
+
+.bullet-heading-value {
+	font-weight: 500;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-bottom: 80px;
+	/* color: #D1FBA5; */
+	background-color: #024230;
+	color: #D1FBA5;
+}
+
+.our-value-body {
+	font-size: 46px;
+	padding-right: 300px;
+	padding-top: 50px;
+	padding-left: 80px;
+	background-color: #024230;
+	color: #D1FBA5;
+}
+
+p {
+	color: #D1FBA5;
+	background-color: #024230;
 }
