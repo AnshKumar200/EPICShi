@@ -1,7 +1,7 @@
 import './App.css';
 import Card from './components/Card';
 import Header from './components/Header';
-import Heading from './components/Heading';
+
 
 function App() {
     return (
@@ -9,6 +9,7 @@ function App() {
             <Header />
             <Heading />
             <Card />
+            <Footer />
         </div>
     );
 }
